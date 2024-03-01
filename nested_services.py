@@ -31,7 +31,6 @@ class Node2(Node):
         self.service = self.create_service(Trigger, 'node2/trigger', self.srv_cb)
 
     def srv_cb(self, request, header, response):
-        print("HERE2")
         return Trigger.Response(message="Hello!")
 
 def main(args=None):
